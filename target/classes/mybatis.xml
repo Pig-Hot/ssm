@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mybatis>
+    <jdbc>
+        <url value="jdbc:mysql://192.168.21.173:3306?useSSL=false&amp;allowMultiQueries=true"/>
+        <user value="root"/>
+        <password value=""/>
+    </jdbc>
+</mybatis>
