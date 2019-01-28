@@ -17,8 +17,8 @@ public class TestServerImpl implements TestServer {
     private TestDao testDao;
 
     @Override
-    public String test() {
-        List<TestModel> list = testDao.test("1");
+    public String test(String s) {
+        List<TestModel> list = testDao.test(s);
         return list.get(0).getServiceId();
     }
 }

@@ -14,7 +14,7 @@ public class TestController {
     private TestServer testServer;
 
     @MyRequest(path = "/test",type = "post")
-    public String test(){
-       return testServer.test();
+    public void test(String s){
+        System.out.println(testServer.test(s));
     }
 }

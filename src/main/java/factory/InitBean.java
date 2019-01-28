@@ -1,16 +1,19 @@
 package factory;
 
 import annotation.MyAutowired;
+import annotation.MyRequest;
 import constants.Constants;
+import http.model.HttpControllerModel;
 import lombok.extern.slf4j.Slf4j;
 import mybatis.MyMybatisProxy;
 import test.dao.TestDao;
 import utils.AnnotationUtils;
 
+import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.lang.reflect.Method;
+import java.lang.reflect.Type;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
@@ -22,6 +25,16 @@ public class InitBean extends BeanDefinition {
 
     //初始化后的bean容器 key为class名，value为实例化对象
     public Map<String, Object> beanContainerMap = new ConcurrentHashMap<>();
+    //初始化后的Controller容器 key为path,value为方法名和参数的Map
+    private List<HttpControllerModel> models = new ArrayList<>();
+
+    public List<HttpControllerModel> getModels() {
+        return models;
+    }
+
+    public Map<String, Object> getBeanContainerMap() {
+        return beanContainerMap;
+    }
 
     /**
      * 初始化bean容器方法
@@ -34,6 +47,19 @@ public class InitBean extends BeanDefinition {
         initXmlBeans();
         //初始化注解配置
         initAutowiredBeans();
+        //初始化controller
+        initControllerBeans();
+    }
+
+    private void initControllerBeans() {
+        List<String> componentList = super.getComponentList(Constants.springmvcConfigLocation);
+        for (String className : componentList) {
+            try {
+                routeSet(className);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     private void initAutowiredBeans() {
@@ -48,6 +74,37 @@ public class InitBean extends BeanDefinition {
                 e.printStackTrace();
             } catch (Exception e) {
                 e.printStackTrace();
+            }
+        }
+    }
+
+    /**
+     * 设置路由,为了方便简单,只允许无参和单个参数
+     */
+    private void routeSet(String className) throws Exception {
+        Class<?> aClass = Class.forName(className);
+        Method[] methods = aClass.getMethods();
+        for (Method method : methods) {
+            if (method.getAnnotation(MyRequest.class) != null) {
+                HttpControllerModel model = new HttpControllerModel();
+                String path = method.getAnnotation(MyRequest.class).path();
+                String requestType = method.getAnnotation(MyRequest.class).type();
+                if (method.getParameterTypes().length == 0) {
+                    model.setClassName(aClass.getName());
+                    model.setMethodName(method.getName());
+                    model.setParamType(null);
+                    model.setPath(path);
+                    model.setRequestType(requestType);
+                    models.add(model);
+                } else {
+                    Type type = method.getParameterTypes()[0];
+                    model.setClassName(aClass.getName());
+                    model.setMethodName(method.getName());
+                    model.setParamType(type.getTypeName());
+                    model.setPath(path);
+                    model.setRequestType(requestType);
+                    models.add(model);
+                }
             }
         }
     }
@@ -139,8 +196,12 @@ public class InitBean extends BeanDefinition {
     public static void main(String[] args) {
         InitBean initBean = new InitBean();
         initBean.initBeans();
-        for (String entry : initBean.beanContainerMap.keySet()) {
-            System.out.println(entry);
+        for(HttpControllerModel model:initBean.getModels()){
+            System.out.println(model.getClassName());
+            System.out.println(model.getMethodName());
+            System.out.println(model.getParamType());
+            System.out.println(model.getPath());
+            System.out.println(model.getRequestType());
         }
     }
 }

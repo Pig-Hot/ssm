@@ -1,4 +1,4 @@
-package mvc.netty.coder;
+package http.netty.coder;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
