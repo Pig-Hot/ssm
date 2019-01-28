@@ -9,6 +9,5 @@ import resource.FileSystemXmlApplicationContext;
 public interface Constants {
     String PATH = FileSystemXmlApplicationContext.class.getResource("/").getPath();
     String contextConfigLocation = "application.xml";
-    String springmvcConfigLocation = "spring-mvc.xml";
     String mybatisConfigLocation = "mybatis.xml";
 }

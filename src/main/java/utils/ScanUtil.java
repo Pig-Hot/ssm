@@ -50,7 +50,7 @@ public class ScanUtil {
         addNewAnnotation(MyController.class, aClass);
         addNewAnnotation(MyService.class, aClass);
         addNewAnnotation(MyRepository.class, aClass);
-        addNewAnnotation(MyBean.class,aClass);
+        addNewAnnotation(MyBean.class, aClass);
     }
 
     private static <T extends Annotation> void addNewAnnotation(Class<T> annotationClass, Class<?> aClass) throws ClassNotFoundException {
@@ -201,9 +201,5 @@ public class ScanUtil {
             e.printStackTrace();
         }
         return listClassName;
-    }
-
-    public static void main(String[] args) {
-        ScanUtil.getClassName("factory").forEach(System.out::println);
     }
 }

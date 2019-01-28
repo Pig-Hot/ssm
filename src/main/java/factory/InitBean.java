@@ -47,28 +47,15 @@ public class InitBean extends BeanDefinition {
         initXmlBeans();
         //初始化注解配置
         initAutowiredBeans();
-        //初始化controller
-        initControllerBeans();
-    }
-
-    private void initControllerBeans() {
-        List<String> componentList = super.getComponentList(Constants.springmvcConfigLocation);
-        for (String className : componentList) {
-            try {
-                routeSet(className);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
     }
 
     private void initAutowiredBeans() {
         List<String> componentList = super.getComponentList(Constants.contextConfigLocation);
-        System.out.println("注解实例化顺序： " + componentList);
         for (String className : componentList) {
             //将每一个类初始化
             try {
                 initClass(className);
+                routeSet(className);
             } catch (ClassNotFoundException e) {
                 log.error("{}没有找到", className);
                 e.printStackTrace();
@@ -137,7 +124,6 @@ public class InitBean extends BeanDefinition {
     public void noInterfaceInit(String className, String interfaceName) throws ClassNotFoundException, IllegalAccessException, InstantiationException {
         Class<?> aClass = Class.forName(className);
         //bean实例化
-        System.out.println("实例化的名字" + aClass.getName());
         Object object = aClass.newInstance();
         Field[] declaredFields = aClass.getDeclaredFields();
         for (Field field : declaredFields) {
@@ -196,7 +182,7 @@ public class InitBean extends BeanDefinition {
     public static void main(String[] args) {
         InitBean initBean = new InitBean();
         initBean.initBeans();
-        for(HttpControllerModel model:initBean.getModels()){
+        for (HttpControllerModel model : initBean.getModels()) {
             System.out.println(model.getClassName());
             System.out.println(model.getMethodName());
             System.out.println(model.getParamType());

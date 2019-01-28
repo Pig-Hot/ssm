@@ -60,8 +60,12 @@ public class HttpServerHandler extends ChannelInboundHandlerAdapter {
                         String resultStr = new String(reader.readFull());
                         Object object = beanContainerMap.get(model.getClassName());
                         Method method = object.getClass().getMethod(model.getMethodName(), String.class);
-                        method.invoke(object, resultStr);
-                        writeAndFlushResponse(ctx, resultStr);
+                        try {
+                            method.invoke(object, resultStr);
+                            writeAndFlushResponse(ctx, resultStr);
+                        } catch (IllegalAccessException | IllegalArgumentException | InvocationTargetException e) {
+                            writeAndFlushResponse(ctx, e.toString());
+                        }
                     }
                 }
             }
