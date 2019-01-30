@@ -27,7 +27,7 @@ import static io.netty.handler.codec.http.HttpVersion.HTTP_1_1;
 public class HttpServerHandler extends ChannelInboundHandlerAdapter {
     private ByteBufToBytes reader;
     private List<HttpControllerModel> models;
-    public Map<String, Object> beanContainerMap;
+    private Map<String, Object> beanContainerMap;
     private String uri;
 
     public HttpServerHandler(List<HttpControllerModel> models, Map<String, Object> beanContainerMap) {
