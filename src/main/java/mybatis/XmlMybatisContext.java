@@ -28,11 +28,11 @@ public class XmlMybatisContext {
             if (element.getName().equals("jdbc")) {
                 List<Element> elements = element.elements();
                 for (Element childElements : elements) {
-                    if(childElements.getName().equals(MyBatisRules.URL.getType())){
+                    if (childElements.getName().equals(MyBatisRules.URL.getType())) {
                         url = childElements.attributeValue(MyBatisRules.URL.getValue());
-                    }else if(childElements.getName().equals(MyBatisRules.USER.getType())){
+                    } else if (childElements.getName().equals(MyBatisRules.USER.getType())) {
                         user = childElements.attributeValue(MyBatisRules.USER.getValue());
-                    }else if(childElements.getName().equals(MyBatisRules.PASSWORD.getType())){
+                    } else if (childElements.getName().equals(MyBatisRules.PASSWORD.getType())) {
                         password = childElements.attributeValue(MyBatisRules.PASSWORD.getValue());
                     }
                 }

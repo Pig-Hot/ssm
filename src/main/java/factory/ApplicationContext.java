@@ -68,12 +68,12 @@ public class ApplicationContext extends FileSystemXmlApplicationContext implemen
                         else if (IocRules.CONS_INJECT.getType().equals(childBeanDefinition.getChildrenType())) {
                             // 构造器注入需要同时注入所有属性
                             List<ChildBeanDefinition> constructorChildBeanDefinition = new ArrayList<>();
-                            for(ChildBeanDefinition conChildBeanDefinition:childBeanDefinitionList){
-                                if(IocRules.CONS_INJECT.getType().equals(conChildBeanDefinition.getChildrenType())){
+                            for (ChildBeanDefinition conChildBeanDefinition : childBeanDefinitionList) {
+                                if (IocRules.CONS_INJECT.getType().equals(conChildBeanDefinition.getChildrenType())) {
                                     constructorChildBeanDefinition.add(conChildBeanDefinition);
                                 }
                             }
-                           object = consValue(aClass, constructorChildBeanDefinition, object);
+                            object = consValue(aClass, constructorChildBeanDefinition, object);
                         }
                     }
                 }
@@ -93,14 +93,20 @@ public class ApplicationContext extends FileSystemXmlApplicationContext implemen
         Object[] objects = new Object[constructorChildBeanDefinition.size()];
         //根据AttributeTwo进行排序
         Collections.sort(constructorChildBeanDefinition);
-        for(int i=0;i<objects.length;i++){
+        for (int i = 0; i < objects.length; i++) {
             objects[i] = constructorChildBeanDefinition.get(i).getAttributeOne();
         }
-        for(int i=0;i<fields.length;i++){
-            switch (fields[i].getType().getSimpleName()){
-                case "String":classArray[i] = String.class;break;
-                case "Integer":classArray[i] = Integer.class;break;
-                case "int":classArray[i] = Integer.class;break;
+        for (int i = 0; i < fields.length; i++) {
+            switch (fields[i].getType().getSimpleName()) {
+                case "String":
+                    classArray[i] = String.class;
+                    break;
+                case "Integer":
+                    classArray[i] = Integer.class;
+                    break;
+                case "int":
+                    classArray[i] = Integer.class;
+                    break;
             }
         }
         try {

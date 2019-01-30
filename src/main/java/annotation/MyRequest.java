@@ -10,5 +10,6 @@ import java.lang.annotation.*;
 @Documented
 public @interface MyRequest {
     String path() default "";
+
     String type() default "";
 }

@@ -80,6 +80,7 @@ public class HttpServerHandler extends ChannelInboundHandlerAdapter {
     private void writeAndFlushResponse(ChannelHandlerContext ctx, String resultStr) {
         FullHttpResponse response = new DefaultFullHttpResponse(HTTP_1_1, OK, Unpooled.wrappedBuffer(resultStr.getBytes()));
         response.headers().set(CONTENT_TYPE, "text/plain");
+        response.headers().set(CONTENT_TYPE, "application/json");
         response.headers().set(CONTENT_LENGTH, response.content().readableBytes());
         response.headers().set(CONNECTION, HttpHeaderValues.KEEP_ALIVE);
         ctx.write(response);

@@ -12,9 +12,9 @@ import java.util.Map;
 public class BeanDefinition extends XmlApplicationContext {
 
     /**
-     *获取注解容器类集合
+     * 获取注解容器类集合
      */
-    public List<String> getComponentList(String contextConfigLocation){
+    public List<String> getComponentList(String contextConfigLocation) {
         List<String> componentList = super.getComponentList(contextConfigLocation);
         return componentList;
     }
@@ -22,8 +22,8 @@ public class BeanDefinition extends XmlApplicationContext {
     /**
      * 获取XML配置容器类集合
      */
-    public Map<String, GenericBeanDefinition> getBeanDefinitionXmlMap(String contextConfigLocation){
-        Map<String, GenericBeanDefinition> beanDefinitionXmlMap  = super.getBeanDefinitionMap(contextConfigLocation);
+    public Map<String, GenericBeanDefinition> getBeanDefinitionXmlMap(String contextConfigLocation) {
+        Map<String, GenericBeanDefinition> beanDefinitionXmlMap = super.getBeanDefinitionMap(contextConfigLocation);
         return beanDefinitionXmlMap;
     }
 

@@ -5,7 +5,7 @@ package utils;
  * 字符串工具类
  */
 public class StringUtils {
-    public static boolean isEmpty(String string){
+    public static boolean isEmpty(String string) {
         return string == null || "".equals(string);
     }
 

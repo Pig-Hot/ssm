@@ -13,7 +13,7 @@ import java.util.Map;
  * Created by zhuran on 2018/11/13 0013
  * JDBC操作数据库工具类
  */
-public class JDBCUtils  {
+public class JDBCUtils {
     private String user = null;
     private String password = null;
     private String url = null;

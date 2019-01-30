@@ -239,7 +239,7 @@ public class MyMybatisProxy implements InvocationHandler {
                     reutrnTypeFlag = "List";
                 }
             }
-            for (Map<String,Object> hashMap : map) {
+            for (Map<String, Object> hashMap : map) {
                 Object returnInstance = returnType.newInstance();
                 // 获取实例的字段属性
                 Field[] declaredFields = returnInstance.getClass().getDeclaredFields();
@@ -278,21 +278,21 @@ public class MyMybatisProxy implements InvocationHandler {
     }
 
     //将数据库读取字段转换为Bean字段
-    private Map<String,Object> sqlBean2JavaBean(Map<String,Object> hashMap){
-        Map<String,Object> map = new HashMap<>();
-        for(String s:hashMap.keySet()){
-            if(s.contains("_")){
+    private Map<String, Object> sqlBean2JavaBean(Map<String, Object> hashMap) {
+        Map<String, Object> map = new HashMap<>();
+        for (String s : hashMap.keySet()) {
+            if (s.contains("_")) {
                 Object o = hashMap.get(s);
                 String[] array = s.split("_");
                 StringBuilder sb = new StringBuilder(array[0]);
-                if(array.length > 1){
-                    for(int i=1;i<array.length;i++){
+                if (array.length > 1) {
+                    for (int i = 1; i < array.length; i++) {
                         sb.append(toUpperCaseFirstOne(array[i]));
                     }
                 }
-                map.put(sb.toString(),o);
-            }else {
-                map.put(s,hashMap.get(s));
+                map.put(sb.toString(), o);
+            } else {
+                map.put(s, hashMap.get(s));
             }
         }
         return map;

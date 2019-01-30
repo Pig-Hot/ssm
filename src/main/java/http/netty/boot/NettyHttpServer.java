@@ -26,14 +26,14 @@ public class NettyHttpServer {
             bootstrap.group(boot, work)
                     .channel(NioServerSocketChannel.class)
                     .option(ChannelOption.SO_BACKLOG, 1024)
-                    .childHandler(new HttpChannelInitService(initBean.getModels(),initBean.getBeanContainerMap()))
+                    .childHandler(new HttpChannelInitService(initBean.getModels(), initBean.getBeanContainerMap()))
                     .option(ChannelOption.SO_BACKLOG, 128)
                     .childOption(ChannelOption.SO_KEEPALIVE, true);
             ChannelFuture f = bootstrap.bind(port).sync();
             f.channel().closeFuture().sync();
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             boot.shutdownGracefully();
             work.shutdownGracefully();
         }

@@ -13,8 +13,8 @@ public class TestController {
     @MyAutowired
     private TestServer testServer;
 
-    @MyRequest(path = "/test",type = "post")
-    public String test(String s){
+    @MyRequest(path = "/test", type = "post")
+    public String test(String s) {
         return testServer.test(s);
     }
 }

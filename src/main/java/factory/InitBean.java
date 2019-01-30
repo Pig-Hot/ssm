@@ -178,16 +178,4 @@ public class InitBean extends BeanDefinition {
             beanContainerMap.put(className, aClass.cast(applicationContext.getBean(beanId)));
         }
     }
-
-    public static void main(String[] args) {
-        InitBean initBean = new InitBean();
-        initBean.initBeans();
-        for (HttpControllerModel model : initBean.getModels()) {
-            System.out.println(model.getClassName());
-            System.out.println(model.getMethodName());
-            System.out.println(model.getParamType());
-            System.out.println(model.getPath());
-            System.out.println(model.getRequestType());
-        }
-    }
 }

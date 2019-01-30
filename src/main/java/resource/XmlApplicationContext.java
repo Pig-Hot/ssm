@@ -112,11 +112,11 @@ public class XmlApplicationContext {
     /**
      * 根据XML,获得注解扫描的bean容器
      */
-    public List<String> getComponentList(String contextConfigLocation){
+    public List<String> getComponentList(String contextConfigLocation) {
         List<String> componentList = new ArrayList<>();
         List<Element> elementList = getElements(contextConfigLocation);
-        for (Element element:elementList){
-            if(element.getName().equals(IocRules.SNAN_RULE.getType())){
+        for (Element element : elementList) {
+            if (element.getName().equals(IocRules.SNAN_RULE.getType())) {
                 String packageName = element.attributeValue(IocRules.SNAN_RULE.getName());
                 //根据packageName获取注解注入的beanName
                 componentList.addAll(resolveComponentList(packageName));
@@ -128,11 +128,11 @@ public class XmlApplicationContext {
     /**
      * 根据要扫描的包名，返回有注解扫描的类
      */
-    public List<String> resolveComponentList(String packageName){
+    public List<String> resolveComponentList(String packageName) {
 
-        if (StringUtils.isEmpty(packageName)){
+        if (StringUtils.isEmpty(packageName)) {
             try {
-                throw new XmlException("请正确设置"+IocRules.SNAN_RULE.getType()+"的属性");
+                throw new XmlException("请正确设置" + IocRules.SNAN_RULE.getType() + "的属性");
             } catch (XmlException e) {
                 e.printStackTrace();
             }
@@ -141,6 +141,6 @@ public class XmlApplicationContext {
         //通过扫描工具类扫描所有有注解的类
         List<String> componentListAfter = ScanUtil.getComponentList(packageName);
         componentList.addAll(componentListAfter);
-        return  componentList;
+        return componentList;
     }
 }

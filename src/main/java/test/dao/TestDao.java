@@ -1,4 +1,5 @@
 package test.dao;
+
 import annotation.MyParam;
 import annotation.MyRepository;
 import annotation.MySelect;
@@ -13,5 +14,5 @@ import java.util.List;
 @MyRepository
 public interface TestDao {
     @MySelect(value = "select * from test.test where service_id = #{service_id}")
-    List<TestModel> test(@MyParam(value = "service_id")String name);
+    List<TestModel> test(@MyParam(value = "service_id") String name);
 }

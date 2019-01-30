@@ -17,7 +17,7 @@ public class HttpChannelInitService extends ChannelInitializer<SocketChannel> {
     private List<HttpControllerModel> models;
     private Map<String, Object> beanContainerMap;
 
-    public HttpChannelInitService(List<HttpControllerModel> models,Map<String, Object> beanContainerMap){
+    public HttpChannelInitService(List<HttpControllerModel> models, Map<String, Object> beanContainerMap) {
         this.models = models;
         this.beanContainerMap = beanContainerMap;
     }
@@ -26,6 +26,6 @@ public class HttpChannelInitService extends ChannelInitializer<SocketChannel> {
     protected void initChannel(SocketChannel sc) throws Exception {
         sc.pipeline().addLast(new HttpRequestDecoder());
         sc.pipeline().addLast(new HttpResponseEncoder());
-        sc.pipeline().addLast(new HttpServerHandler(models,beanContainerMap));
+        sc.pipeline().addLast(new HttpServerHandler(models, beanContainerMap));
     }
 }
