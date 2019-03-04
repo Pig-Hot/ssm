@@ -2,21 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="338de539-9fd2-419c-82d4-cfec9eae92bb" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/design_mode/factory/abst/AbstTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/design_mode/factory/abst/Provider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/design_mode/factory/abst/SendMailFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/design_mode/factory/abst/SendQQFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/design_mode/factory/simple/FactoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/design_mode/factory/simple/MailSender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/design_mode/factory/simple/QQSender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/design_mode/factory/simple/SendFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/design_mode/factory/simple/Sender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/design_mode/single/Single.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/design_mode/strategy/Context.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/design_mode/strategy/Operation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/design_mode/strategy/OperationAdd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/design_mode/strategy/OperationSub.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/design_mode/strategy/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/design_mode/observer/AbstractSubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/design_mode/observer/My.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/design_mode/observer/O1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/design_mode/observer/O2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/design_mode/observer/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/design_mode/observer/Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/design_mode/observer/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/design_mode/single/SingleEnum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -31,99 +24,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SendFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/design_mode/factory/simple/SendFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-              <folding>
-                <element signature="e#149#150#0" expanded="true" />
-                <element signature="e#188#189#0" expanded="true" />
-                <element signature="e#228#229#0" expanded="true" />
-                <element signature="e#265#266#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FactoryTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/design_mode/factory/simple/FactoryTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-              <folding>
-                <element signature="e#153#154#0" expanded="true" />
-                <element signature="e#180#181#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Provider.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/design_mode/factory/abst/Provider.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/design_mode/factory/abst/AbstTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Operation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/design_mode/strategy/Operation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OperationAdd.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/design_mode/strategy/OperationAdd.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-              <folding>
-                <element signature="e#178#179#0" expanded="true" />
-                <element signature="e#202#203#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Context.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/design_mode/strategy/Context.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-              <folding>
-                <element signature="e#172#173#0" expanded="true" />
-                <element signature="e#213#214#0" expanded="true" />
-                <element signature="e#266#267#0" expanded="true" />
-                <element signature="e#321#322#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/design_mode/strategy/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Single.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Single.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/design_mode/single/Single.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="253">
@@ -136,15 +37,97 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OperationSub.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/design_mode/strategy/OperationSub.java">
+      <file leaf-file-name="SingleLoading.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/design_mode/single/SingleLoading.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SingleEnum.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/design_mode/single/SingleEnum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="8" />
+              <folding>
+                <element signature="e#92#93#0" expanded="true" />
+                <element signature="e#126#127#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Observer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/design_mode/observer/Observer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="O1.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/design_mode/observer/O1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+              <folding>
+                <element signature="e#184#185#0" expanded="true" />
+                <element signature="e#220#221#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="O2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/design_mode/observer/O2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Subject.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/design_mode/observer/Subject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractSubject.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/design_mode/observer/AbstractSubject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="337">
+              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+              <folding>
+                <element signature="e#281#282#0" expanded="true" />
+                <element signature="e#304#305#0" expanded="true" />
+                <element signature="e#376#377#0" expanded="true" />
+                <element signature="e#412#413#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="My.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/design_mode/observer/My.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/design_mode/observer/Test.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="184">
-              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-              <folding>
-                <element signature="e#178#179#0" expanded="true" />
-                <element signature="e#202#203#0" expanded="true" />
-              </folding>
+              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -184,16 +167,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/http/netty/handle/HttpServerHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/test/DoubleLinkedList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/test/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/test/DoublyLinkList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/test/Demo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/test/HelloSogou.java" />
-        <option value="$PROJECT_DIR$/src/main/java/test/HasStatic.java" />
-        <option value="$PROJECT_DIR$/src/main/java/data_structures/MyStackArray.java" />
-        <option value="$PROJECT_DIR$/src/main/java/data_structures/MyAVLTree.java" />
         <option value="$PROJECT_DIR$/src/main/java/data_structures/MyBinarySearchTree.java" />
         <option value="$PROJECT_DIR$/src/main/java/java_basic/A.java" />
         <option value="$PROJECT_DIR$/src/main/java/java_basic/B.java" />
@@ -235,6 +208,16 @@
         <option value="$PROJECT_DIR$/src/main/java/design_mode/strategy/Context.java" />
         <option value="$PROJECT_DIR$/src/main/java/design_mode/strategy/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/design_mode/single/Single.java" />
+        <option value="$PROJECT_DIR$/src/main/java/design_mode/single/SingleLoading.java" />
+        <option value="$PROJECT_DIR$/src/main/java/design_mode/single/SomeThing.java" />
+        <option value="$PROJECT_DIR$/src/main/java/design_mode/single/SingleEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/design_mode/observer/Observer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/design_mode/observer/O1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/design_mode/observer/O2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/design_mode/observer/Subject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/design_mode/observer/AbstractSubject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/design_mode/observer/My.java" />
+        <option value="$PROJECT_DIR$/src/main/java/design_mode/observer/Test.java" />
       </list>
     </option>
   </component>
@@ -306,7 +289,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="design_mode" type="462c0819:PsiDirectoryNode" />
-              <item name="single" type="462c0819:PsiDirectoryNode" />
+              <item name="observer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ssm" type="b2602c69:ProjectViewProjectNode" />
@@ -339,15 +322,16 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\ssm\src\main\java\data_structures" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="design_mode.observer" />
+      <recent name="test.model" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="mvc.netty.coder" />
       <recent name="mvc.netty.handle" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="test.model" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\Desktop\ssm\src\main\java\data_structures" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -428,7 +412,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FactoryTest">
+  <component name="RunManager" selected="Application.Test">
     <configuration name="你好" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="java_basic.thread.你好" />
       <module name="ssm" />
@@ -451,17 +435,6 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="ExchangerThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="java_basic.thread.ExchangerThread" />
-      <module name="ssm" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="java_basic.thread.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
     <configuration name="FactoryTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="design_mode.factory.simple.FactoryTest" />
       <module name="ssm" />
@@ -469,6 +442,17 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="design_mode.factory.simple.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="design_mode.observer.Test" />
+      <module name="ssm" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="design_mode.observer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -526,19 +510,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.ExchangerThread" />
       <item itemvalue="Application.TestCyclicBarrierThread" />
       <item itemvalue="Application.BlockQueueThread" />
       <item itemvalue="Application.你好" />
       <item itemvalue="Application.FactoryTest" />
+      <item itemvalue="Application.Test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.FactoryTest" />
         <item itemvalue="Application.你好" />
         <item itemvalue="Application.BlockQueueThread" />
         <item itemvalue="Application.TestCyclicBarrierThread" />
-        <item itemvalue="Application.ExchangerThread" />
       </list>
     </recent_temporary>
   </component>
@@ -566,7 +550,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226304000" />
+    <option name="totallyTimeSpent" value="227620000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -582,9 +566,9 @@
       <window_info anchor="right" id="Maven Projects" order="4" weight="0.32987013" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="REST Client" order="16" weight="0.37799564" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7384319" visible="true" weight="0.34858388" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7384319" weight="0.34858388" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.16531165" />
-      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.49807197" weight="0.37799564" />
+      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.49807197" visible="true" weight="0.37799564" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Designer" order="2" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.495283" visible="true" weight="0.15511727" />
@@ -665,57 +649,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/java_basic/A.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/java_basic/B.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/java_basic/Str.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/java_basic/User.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/StringBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="138" lean-forward="true" selection-start-line="138" selection-end-line="138" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/StringBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="267" column="43" selection-start-line="267" selection-start-column="37" selection-end-line="267" selection-end-column="43" />
-          <folding>
-            <element signature="e#4139#4140#0" expanded="true" />
-            <element signature="e#4164#4165#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/Comparable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="95" column="17" selection-start-line="95" selection-start-column="17" selection-end-line="95" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/Integer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -1111,6 +1044,83 @@
             <element signature="e#220#221#0" expanded="true" />
             <element signature="e#248#249#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/design_mode/single/SingleLoading.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/design_mode/single/SingleEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="8" />
+          <folding>
+            <element signature="e#92#93#0" expanded="true" />
+            <element signature="e#126#127#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/design_mode/observer/Observer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/design_mode/observer/O1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+          <folding>
+            <element signature="e#184#185#0" expanded="true" />
+            <element signature="e#220#221#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/design_mode/observer/O2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/design_mode/observer/Subject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/design_mode/observer/AbstractSubject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <element signature="e#281#282#0" expanded="true" />
+            <element signature="e#304#305#0" expanded="true" />
+            <element signature="e#376#377#0" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/design_mode/observer/My.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/design_mode/observer/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
         </state>
       </provider>
     </entry>
